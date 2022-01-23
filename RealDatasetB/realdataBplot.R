@@ -178,7 +178,7 @@ ggplot(allRes,aes(x=Mapper,y=value,group=Species))+
   facet_wrap( .~ Species,ncol = 3)
 dev.off()
 
-############## CpG£ºThe number of reliable CpG sites #########################
+############## CpGï¼šThe number of reliable CpG sites #########################
 countToalNumCpG <- function(species,sampleName1,sampleName2,sampleName3,sampleName4,sampleName5,sampleName6,depth){
   sampleReport1 <- read.csv(paste(species,"\\cpgAnaRes\\dpeth",depth,"_",sampleName1,"_report.txt",sep=""),header = F,sep = "\t", quote = "\"", dec = ".")
   sampleReport2 <- read.csv(paste(species,"\\cpgAnaRes\\dpeth",depth,"_",sampleName2,"_report.txt",sep=""),header = F,sep = "\t", quote = "\"", dec = ".")
@@ -518,13 +518,13 @@ methDis <- function(species,species2,depth,sample1,sample2,sample3,sample4,sampl
   sample6 <- read.csv(paste(species,"\\cpgAnaRes\\dpeth",depth,"_",sample6,"cpgMehtLevelDistri.txt",sep=""),header = T,sep = "\t", quote = "\"", dec = ".")
   
   sam<- function(sampleName){
-    # Ñù±¾²»Í¬¼×»ù»¯Ë®Æ½µÄ×ÜºÍ,×ÜºÍÊÇËÄ¸öÈí¼þcpgÎ»µãµÄ²¢¼¯
+    # æ ·æœ¬ä¸åŒç”²åŸºåŒ–æ°´å¹³çš„æ€»å’Œ,æ€»å’Œæ˜¯å››ä¸ªè½¯ä»¶cpgä½ç‚¹çš„å¹¶é›†
     total <- as.numeric(colSums(sampleName[,2:4]))
-    # Ñù±¾²»Í¬¼×»ù»¯Ë®Æ½µÄÒ»ÖÂÐÔ×ÜÊý
+    # æ ·æœ¬ä¸åŒç”²åŸºåŒ–æ°´å¹³çš„ä¸€è‡´æ€§æ€»æ•°
     con <- as.numeric(sampleName[which(sampleName$class=="consis"),2:4])
-    # Ñù±¾²»Í¬¼×»ù»¯Ë®Æ½µÄ·ÇÒ»ÖÂÐÔ×ÜÊý
+    # æ ·æœ¬ä¸åŒç”²åŸºåŒ–æ°´å¹³çš„éžä¸€è‡´æ€§æ€»æ•°
     dis <- as.numeric(colSums(sampleName[which(sampleName$class!="consis"),2:4]))
-    # ÈýÖÖ¼×»ù»¯Ë®Æ½µÄtotal,concordant,discordant
+    # ä¸‰ç§ç”²åŸºåŒ–æ°´å¹³çš„total,concordant,discordant
     te <- c(total,con,dis)
     return(te)
   }
@@ -720,7 +720,7 @@ ggplot(allRes,aes(x=Type,y=Number,group=Species))+
   facet_wrap( .~ Species,ncol = 4)
 dev.off()
 
-############## DMC£ºThe number of reliable DMCs ##############################################
+############## DMCï¼šThe number of reliable DMCs ##############################################
 
 DMLres <- function(species,species2,depth){
   sampleReport1 <- read.csv(paste(species,"\\dmcRes\\depth",depth,"\\depth",depth,"report.txt",sep=""),header = F,sep = "\t", quote = "\"", dec = ".")
@@ -1036,7 +1036,7 @@ ggplot(allSpecies, aes(SpeRegion, weight = mean*100, fill = Type)) +
         axis.text.x = element_text(size = 12,colour ="black",face = "bold"))
 dev.off()
 
-############## DMR£ºThe number of reliable DMRs #############################################
+############## DMRï¼šThe number of reliable DMRs #############################################
 DMRres<- function(species,species2,depth){
   sampleReport1 <- read.csv(paste(species,"\\dmrRes\\depth",depth,"\\",species,"_vennRes.txt",sep=""),header = F,sep = "\t", quote = "\"", dec = ".")
   sampleReport <-sampleReport1[-c(1:4),] 
@@ -1218,7 +1218,7 @@ ggplot(allRes,aes(x=Type,y=Number,group=Species))+
   facet_wrap( .~ Species,ncol = 3)
 dev.off()
 
-############## DMR-related genes£ºThe numnber of reliable genes #################################################
+############## DMR-related genesï¼šThe numnber of reliable genes #################################################
 GENEres<- function(species,species2,depth){
   sampleReport1 <- read.csv(paste(species,"\\gene\\depth",depth,"\\","depth",depth,"_gene_DMR_Venn_report.txt",sep=""),header = F,sep = "\t", quote = "\"", dec = ".")
   sampleReport <-sampleReport1[-c(1:4),] 
@@ -1401,7 +1401,7 @@ ggplot(allRes,aes(x=Type,y=Number,group=Species))+
   facet_wrap( .~ Species,ncol = 4)
 dev.off()
 
-############## KEGG£ºThe number of reliable pathway ############################################
+############## KEGGï¼šThe number of reliable pathway ############################################
 KEGGres<- function(species,species2,depth){
   sampleReport1 <- read.csv(paste("enrichKEGG\\depth",depth,"_p001\\",species,"_kegg_Venn.txt",sep=""),header = F,sep = "\t", quote = "\"", dec = ".")
   sampleReport <-sampleReport1[-c(1:4),] 
