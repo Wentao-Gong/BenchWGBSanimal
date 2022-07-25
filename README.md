@@ -1,5 +1,5 @@
 # BenchWGBSsoft
-Benchmarking DNA methylation analysis of Ten Alignment Algorithms for Whole Genome Bisulfite Sequencing in mammals
+Benchmarking DNA methylation analysis of 14 Alignment Algorithms for Whole Genome Bisulfite Sequencing in mammals
 
 Wentao Gong1,#, Xiangchun Pan1,#, Dantong Xu1, Guanyu Ji2, Yifei Wang1, Yuhan Tian1, Jiali Cai1, Jiaqi Li1, Zhe Zhang1*, and Xiaolong Yuan1*
 
