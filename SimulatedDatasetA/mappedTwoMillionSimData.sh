@@ -336,6 +336,7 @@ do
 				-2 ${simudataDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}_2.fastq \
 				-S ${resultDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}/${mapper}/simulatedErrRates${errorRate//./}Num${Num}.sam \
 				-p 1 \
+				--directional-mapping \
 				--base-change C,T			
 			python ${scriptDir}/SimuDataAccuUni.py \
 				-i ${resultDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}/${mapper}/simulatedErrRates${errorRate//./}Num${Num}.sam \
@@ -363,6 +364,7 @@ do
 				-2 ${simudataDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}_2.fastq \
 				-S ${resultDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}/${mapper}/simulatedErrRates${errorRate//./}Num${Num}.sam \
 				-p 1 \
+				--directional-mapping \
 				--base-change C,T \
 				--repeat
 			python ${scriptDir}/SimuDataAccuUni.py \
