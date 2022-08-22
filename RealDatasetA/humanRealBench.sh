@@ -372,6 +372,7 @@ do
 		-2 ${realDataDir}/${species}/seedReadLen/${sample}_clean_readLen150_2.fastq \
 		-S ${resultDir}/${species}/${sample}/${mapper}/realDataSample${sample}.sam \
 		-p 1 \
+		--directional-mapping \
 		--base-change C,T
 	python /share/nas2/USER_DIR/wenping/gwentao/my_script/RealDataUniMap.py \
 		-i ${resultDir}/${species}/${sample}/${mapper}/realDataSample${sample}.sam \
@@ -403,6 +404,7 @@ do
 		-2 ${realDataDir}/${species}/seedReadLen/${sample}_clean_readLen150_2.fastq \
 		-S ${resultDir}/${species}/${sample}/${mapper}/realDataSample${sample}.sam \
 		-p 1 \
+		--directional-mapping \
 		--base-change C,T \
 		--repeat
 	python /share/nas2/USER_DIR/wenping/gwentao/my_script/RealDataUniMap.py \
