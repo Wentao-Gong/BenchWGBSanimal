@@ -394,6 +394,8 @@ do
 				-DB ${indexDir}/${speciesList[$i]}/${mapper}/ \
 				-O ${resultDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}/${mapper}/simulatedErrRates${errorRate//./}Num${Num} \
 				-t 1
+			samtools view -h ${resultDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}/${mapper}/simulatedErrRates${errorRate//./}Num${Num}.bam \
+				-o ${resultDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}/${mapper}/simulatedErrRates${errorRate//./}Num${Num}.sam
 			python ${scriptDir}/SimuDataAccuUni.py \
 				-i ${resultDir}/${speciesList[$i]}/simulatedErrRates${errorRate//./}Num${Num}/${mapper}/simulatedErrRates${errorRate//./}Num${Num}.sam \
 				-t ${mapper} \
