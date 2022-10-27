@@ -8,7 +8,7 @@ Wentao Gong1,#, Xiangchun Pan1,#, Dantong Xu1, Guanyu Ji2, Yifei Wang1, Yuhan Ti
 
 In this study, BSBolt, Bwa-meth, Bismark-bwt2-e2e, BSMAP, and Walt are used to further investigate their performance on biological interpretation of WGBS data. However, there are CallMethylation and bismark_methylation_extractor, which wrapped up BSBolt and Bismark-bwt2-e2e, to call the methylation level of CpG sites, respectively. 
 
-To benchmark and evaluate calling performance of methylation level at CpG sites without bias, we use Methyldackel to call the methylation level of CpG sites. 
+To benchmark and evaluate calling performance of methylation level at CpG sites, we use Methyldackel to call the methylation level of CpG sites. 
 
 Sincerely, it is sensible to choose CallMethylation for BSBolt and bismark_methylation_extractor for Bismark to call the methylation level of CpG sites.
 
