@@ -1,0 +1,8 @@
+bismark	group1	./walt_SRR7812178_CpG.bedGraph
+bismark	group1	./walt_SRR7812112_CpG.bedGraph
+bismark	group2	./walt_SRR7812199_CpG.bedGraph
+bismark	group2	./walt_SRR7812111_CpG.bedGraph
+bsmap	group1	./walt_SRR7812178_CpG.bedGraph
+bsmap	group1	./walt_SRR7812112_CpG.bedGraph
+bsmap	group2	./walt_SRR7812199_CpG.bedGraph
+bsmap	group2	./walt_SRR7812111_CpG.bedGraph
